@@ -1,7 +1,7 @@
 function [PLV,Psa]=PLV_Psa_new(PLV_old,Psa_old,CLV_old,CLV,SMi,SAo,klokmax)
 %filename PLV_Psa_new.m
 global Csa Rs RMi RAo dt CHECK PLA;
-r = 10*rand(1,klokmax);
+r = 10*rand(1,1);
 
 C11=CLV+dt*((SMi/RMi)+(SAo/RAo));
 C12=-dt*(SAo/RAo);
